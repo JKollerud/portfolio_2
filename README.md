@@ -13,7 +13,9 @@ This is my personal portfolio website, designed to present my work, technical sk
 
 The latest version focuses on clarity, simplicity and strong project presentation — making it easy for recruiters and developers to quickly understand what I’ve built and what I can do.
 
-### Features
+---
+
+## Features
 
 - Clean and modern hero section with introduction
 - Featured projects with detailed descriptions and tech stack
@@ -36,23 +38,6 @@ This project is built using:
 > Note: This version is intentionally built without JavaScript to keep the experience fast, simple and focused.
 
 ---
-
-## Getting Started
-
-To run the project locally:
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/JKollerud/portfolio.git
-```
-
-portfolio/
-│
-├── index.html
-├── styles.css
-├── img/
-└── README.md
 
 ## Contact
 
