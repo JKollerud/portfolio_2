@@ -45,12 +45,13 @@
   </head>
   <body>
     <nav class="navbar">
-      <span class="nav-name">Joakim Kollerud</span>
+      <a href="#top" class="nav-name">Joakim Kollerud</a>
       <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="mailto:j_kollerud@hotmail.com">Contact</a>
       </div>
     </nav>
+
     <header class="ingress_header" id="top">
       <div class="ingress_container">
         <img
@@ -77,20 +78,19 @@
               href="https://github.com/JKollerud"
               target="_blank"
               rel="noopener noreferrer"
+              >GitHub</a
             >
-              GitHub
-            </a>
             <a
               href="https://linkedin.com/in/joakim-kollerud-723803369"
               target="_blank"
               rel="noopener noreferrer"
+              >LinkedIn</a
             >
-              LinkedIn
-            </a>
           </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="projects" id="projects">
         <div class="section-heading">
@@ -102,11 +102,19 @@
           </p>
         </div>
         <div class="projects-grid">
-          <article class="project_card featured">
-            <img
-              src="/img/holidaze_screenshot.jpg"
-              alt="Screenshot of Holidaze Booking Platform"
-            />
+          <article class="project_card featured linked">
+            <a
+              href="project-holidaze.html"
+              class="card-overlay"
+              aria-label="Read more about Holidaze"
+            ></a>
+            <div class="card-image-wrap">
+              <img
+                src="/img/holidaze_screenshot.jpg"
+                alt="Screenshot of Holidaze Booking Platform"
+              />
+              <p class="card-read-more">Click to read more</p>
+            </div>
             <div class="project_content">
               <p class="project_badge">Featured</p>
               <h3>Holidaze Booking Platform</h3>
@@ -147,11 +155,20 @@
               </div>
             </div>
           </article>
-          <article class="project_card featured">
-            <img
-              src="/img/nordholmauctions_screenshot.jpg"
-              alt="Screenshot of Nordholm Auction House"
-            />
+
+          <article class="project_card featured linked">
+            <a
+              href="project-nordholm.html"
+              class="card-overlay"
+              aria-label="Read more about Nordholm"
+            ></a>
+            <div class="card-image-wrap">
+              <img
+                src="/img/nordholmauctions_screenshot.jpg"
+                alt="Screenshot of Nordholm Auction House"
+              />
+              <p class="card-read-more">Click to read more</p>
+            </div>
             <div class="project_content">
               <p class="project_badge">Featured</p>
               <h3>Nordholm Auction House</h3>
@@ -179,7 +196,7 @@
                   >Live Demo</a
                 >
                 <a
-                  href="https://github.com/JKollerud/semesterProject2"
+                  href="https://github.com/JKollerud/Nordholm-Auction-House-SP2"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Source Code</a
@@ -187,11 +204,21 @@
               </div>
             </div>
           </article>
-          <article class="project_card featured">
-            <img
-              src="/img/online_shop_screenshot.jpg"
-              alt="Screenshot of online shop project"
-            />
+
+          <!-- Online Shop -->
+          <article class="project_card featured linked">
+            <a
+              href="project-onlineshop.html"
+              class="card-overlay"
+              aria-label="Read more about Online Shop"
+            ></a>
+            <div class="card-image-wrap">
+              <img
+                src="/img/online_shop_screenshot.jpg"
+                alt="Screenshot of online shop project"
+              />
+              <p class="card-read-more">Click to read more</p>
+            </div>
             <div class="project_content">
               <p class="project_badge">Featured</p>
               <h3>Online Shop (React & Next.js)</h3>
@@ -217,19 +244,19 @@
                   href="https://js-frameworks-online-shop.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Live Demo</a
                 >
-                  Live Demo
-                </a>
                 <a
                   href="https://github.com/NoroffFEU/jsfw-2025-v1-jk-jsframeworks"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Source Code</a
                 >
-                  Source Code
-                </a>
               </div>
             </div>
           </article>
+
+          <!-- HowView Labs -->
           <article class="project_card featured">
             <img
               src="/img/howviewlabs_screenshot.jpg"
@@ -270,6 +297,8 @@
               </div>
             </div>
           </article>
+
+          <!-- Supabase -->
           <article class="project_card featured">
             <img src="/img/supabase_logo.jpg" alt="Supabase logo" />
             <div class="project_content">
@@ -302,12 +331,14 @@
           </article>
         </div>
       </section>
+
       <section class="projects other-projects">
         <div class="section-heading">
           <p class="section-label">More Work</p>
           <h2>Other Projects</h2>
         </div>
         <div class="projects-grid projects-grid-small">
+          <!-- Social Media Platform -->
           <article class="project_card compact">
             <img
               src="/img/smp_screenshot.jpg"
@@ -341,6 +372,8 @@
               </div>
             </div>
           </article>
+
+          <!-- Community Science Museum -->
           <article class="project_card compact">
             <img
               src="/img/community_science_museum_screenshot.jpg"
@@ -373,6 +406,8 @@
               </div>
             </div>
           </article>
+
+          <!-- Rainydays -->
           <article class="project_card compact">
             <img
               src="/img/rainydays_screenshot.jpg"
@@ -408,6 +443,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <section>
         <div class="footer_button">
@@ -417,32 +453,28 @@
       <section class="connect_footer">
         <h3>Connect</h3>
         <a href="mailto:j_kollerud@hotmail.com">
-          <i class="fa-solid fa-envelope"></i>
-          Email
+          <i class="fa-solid fa-envelope"></i> Email
         </a>
         <a
           href="https://www.instagram.com/skrollefanten"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-instagram"></i>
-          Instagram
+          <i class="fa-brands fa-instagram"></i> Instagram
         </a>
         <a
           href="https://linkedin.com/in/joakim-kollerud-723803369"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-linkedin"></i>
-          LinkedIn
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
         </a>
         <a
           href="https://github.com/JKollerud"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-github"></i>
-          GitHub
+          <i class="fa-brands fa-github"></i> GitHub
         </a>
       </section>
     </footer>

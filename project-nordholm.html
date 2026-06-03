@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nordholm Auction House – a modern auction platform built with JavaScript, Tailwind CSS and the Noroff Auction API."
+    />
+    <meta name="author" content="Joakim Kollerud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="article.css" />
+    <script
+      src="https://kit.fontawesome.com/3f2533518e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nordholm Auction House – Joakim Kollerud</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-name">Joakim Kollerud</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="mailto:j_kollerud@hotmail.com">Contact</a>
+      </div>
+    </nav>
+
+    <main class="article-main">
+      <div class="article-container">
+        <a href="index.html#projects" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i> Back to projects
+        </a>
+
+        <header class="article-header">
+          <p class="section-label">Featured Project</p>
+          <div class="article-title-row">
+            <h1>Nordholm Auction House</h1>
+            <button class="share-btn" onclick="copyLink()" title="Copy link">
+              <i class="fa-solid fa-link"></i>
+              <span>Share</span>
+            </button>
+          </div>
+          <div class="tech-tags" style="margin-top: 1rem">
+            <span>JavaScript</span>
+            <span>Tailwind CSS</span>
+            <span>HTML</span>
+            <span>API</span>
+          </div>
+        </header>
+
+        <figure class="article-figure">
+          <img
+            src="/img/nordholmauctions_screenshot.jpg"
+            alt="Screenshot of Nordholm Auction House homepage showing auction listings and navigation"
+          />
+          <figcaption>
+            Nordholm Auction House – homepage with active auction listings.
+          </figcaption>
+        </figure>
+
+        <div class="article-body">
+          <div class="article-content">
+            <h2>About the project</h2>
+            <p>
+              Nordholm Auction House is a semester project built at Noroff
+              School of Technology. The platform is designed around a calm,
+              Nordic aesthetic — bringing together timeless artworks and
+              collectibles in a clean, structured interface. Users can browse
+              active auctions, register an account, place bids and manage their
+              own listings.
+            </p>
+            <p>
+              The project was built purely with vanilla JavaScript, HTML and
+              Tailwind CSS — no frontend framework — which meant handling all
+              DOM manipulation, routing and state manually.
+            </p>
+
+            <h2>What I built</h2>
+            <ul>
+              <li>User registration and login with JWT authentication</li>
+              <li>
+                Browse all active auction listings with search and filtering
+              </li>
+              <li>Individual listing pages with full bid history</li>
+              <li>Place bids on active listings in real time</li>
+              <li>
+                Create new listings with title, description, images and deadline
+              </li>
+              <li>
+                User profile page with avatar, credit balance and listing
+                history
+              </li>
+              <li>Fully responsive layout for mobile and desktop</li>
+            </ul>
+
+            <h2>Technical details</h2>
+            <p>
+              The project uses the Noroff Auction API for all data.
+              Authentication is handled with JWT tokens stored in localStorage.
+              All API calls are made with the native Fetch API wrapped in
+              reusable async utility functions. Tailwind CSS is used for all
+              styling via CDN, with a consistent design system applied
+              throughout.
+            </p>
+            <p>
+              The multi-page structure is handled with separate HTML files and
+              shared JS modules loaded via ES module imports. Special care was
+              taken to keep the code modular and maintainable despite not using
+              a framework.
+            </p>
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card">
+              <h3>Project links</h3>
+              <div class="project-links" style="flex-direction: column">
+                <a
+                  href="https://semesterproject2jk.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/JKollerud/semesterProject2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a
+                  href="https://github.com/JKollerud/semesterProject2#readme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-readme"></i> README
+                </a>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>Built with</h3>
+              <ul class="sidebar-list">
+                <li>Vanilla JavaScript</li>
+                <li>HTML5</li>
+                <li>Tailwind CSS</li>
+                <li>Fetch API</li>
+                <li>JWT Authentication</li>
+                <li>Noroff Auction API</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <section>
+        <div class="footer_button">
+          <a href="#top">Back to top</a>
+        </div>
+      </section>
+      <section class="connect_footer">
+        <h3>Connect</h3>
+        <a href="mailto:j_kollerud@hotmail.com"
+          ><i class="fa-solid fa-envelope"></i> Email</a
+        >
+        <a
+          href="https://linkedin.com/in/joakim-kollerud-723803369"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+        >
+        <a
+          href="https://github.com/JKollerud"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i> GitHub</a
+        >
+      </section>
+    </footer>
+
+    <div class="toast" id="toast">Link copied!</div>
+
+    <script>
+      function copyLink() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          const toast = document.getElementById('toast');
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Holidaze Booking Platform – a full-stack accommodation booking app built with React, TypeScript and Tailwind CSS."
+    />
+    <meta name="author" content="Joakim Kollerud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="article.css" />
+    <script
+      src="https://kit.fontawesome.com/3f2533518e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Holidaze Booking Platform – Joakim Kollerud</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-name">Joakim Kollerud</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="mailto:j_kollerud@hotmail.com">Contact</a>
+      </div>
+    </nav>
+
+    <main class="article-main">
+      <div class="article-container">
+        <a href="index.html#projects" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i> Back to projects
+        </a>
+
+        <header class="article-header">
+          <p class="section-label">Featured Project</p>
+          <div class="article-title-row">
+            <h1>Holidaze Booking Platform</h1>
+            <button class="share-btn" onclick="copyLink()" title="Copy link">
+              <i class="fa-solid fa-link"></i>
+              <span>Share</span>
+            </button>
+          </div>
+          <div class="tech-tags" style="margin-top: 1rem">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>Vite</span>
+            <span>API</span>
+          </div>
+        </header>
+
+        <figure class="article-figure">
+          <img
+            src="/img/holidaze_screenshot.jpg"
+            alt="Screenshot of the Holidaze Booking Platform homepage showing a search interface and venue listings"
+          />
+          <figcaption>
+            Holidaze – homepage with search and featured venue listings.
+          </figcaption>
+        </figure>
+
+        <div class="article-body">
+          <div class="article-content">
+            <h2>About the project</h2>
+            <p>
+              Holidaze is a full-featured accommodation booking platform built
+              as a final exam project at Noroff School of Technology. The
+              application allows two types of users — customers and venue
+              managers — to interact with the platform in different ways, all
+              through a single responsive interface.
+            </p>
+            <p>
+              Customers can browse and search for venues, view detailed
+              listings, make bookings and manage their upcoming stays through a
+              personal profile. Venue managers get access to additional tools to
+              create, edit and delete their own listings, as well as view and
+              manage incoming bookings from customers.
+            </p>
+
+            <h2>What I built</h2>
+            <ul>
+              <li>
+                Full authentication flow — register, login and persistent
+                session handling
+              </li>
+              <li>Browse and search venues with live filtering</li>
+              <li>
+                Detailed venue pages with image galleries, amenities and
+                availability calendar
+              </li>
+              <li>Booking system with date selection and confirmation</li>
+              <li>User profile with avatar, bio and booking history</li>
+              <li>
+                Venue manager dashboard to create, edit and delete listings
+              </li>
+              <li>Fully responsive layout across mobile, tablet and desktop</li>
+            </ul>
+
+            <h2>Technical details</h2>
+            <p>
+              The project is built with React and TypeScript using Vite as the
+              build tool. Styling is handled entirely with Tailwind CSS. All
+              data is fetched from the Noroff Holidaze REST API using custom
+              hooks and async/await patterns. State management is handled with
+              React's built-in hooks — no external state library was used.
+            </p>
+            <p>
+              Authentication tokens are stored in localStorage and attached to
+              API requests via Axios interceptors. The routing is handled by
+              React Router v6 with protected routes for authenticated-only
+              pages.
+            </p>
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card">
+              <h3>Project links</h3>
+              <div class="project-links" style="flex-direction: column">
+                <a
+                  href="https://holidazebookingplatform.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/JKollerud/holidaze-booking-platform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a
+                  href="https://github.com/JKollerud/holidaze-booking-platform#readme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-readme"></i> README
+                </a>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>Built with</h3>
+              <ul class="sidebar-list">
+                <li>React 18</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS</li>
+                <li>Vite</li>
+                <li>React Router v6</li>
+                <li>Axios</li>
+                <li>Noroff Holidaze API</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <section>
+        <div class="footer_button">
+          <a href="#top">Back to top</a>
+        </div>
+      </section>
+      <section class="connect_footer">
+        <h3>Connect</h3>
+        <a href="mailto:j_kollerud@hotmail.com"
+          ><i class="fa-solid fa-envelope"></i> Email</a
+        >
+        <a
+          href="https://linkedin.com/in/joakim-kollerud-723803369"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+        >
+        <a
+          href="https://github.com/JKollerud"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i> GitHub</a
+        >
+      </section>
+    </footer>
+
+    <div class="toast" id="toast">Link copied!</div>
+
+    <script>
+      function copyLink() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          const toast = document.getElementById('toast');
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 2000);
+        });
+      }
+    </script>
+  </body>
+</html>
