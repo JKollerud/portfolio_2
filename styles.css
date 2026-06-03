@@ -306,7 +306,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 1.25rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
 }
 
 .project-links a {
@@ -322,6 +323,15 @@ body {
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
+}
+
+.project-links a.btn-primary {
+  background-color: var(--color-blue-prime);
+  color: white;
+}
+
+.project-links a.btn-primary:hover {
+  background-color: var(--color-blue-tert);
 }
 
 .project-links a:hover {
@@ -399,6 +409,44 @@ body {
 
 .footer_button a:hover {
   background-color: var(--color-blue-tert);
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav-name {
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: var(--font-bold);
+  color: var(--color-secondary);
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-blue-prime);
 }
 
 /* Tablet/Desktop layout */
